@@ -1,0 +1,338 @@
+/*
+	TABLE STRUCTURE FOR: Account
+*/
+
+DROP TABLE IF EXISTS "Account";
+
+CREATE TABLE "Account" (
+  "Ano" int(11) NOT NULL PRIMARY KEY,
+  "starting_date" date NOT NULL,
+  "Balance" int(4) NOT NULL
+);
+
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (10105970, '1996-06-08', 15000);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (10306853, '2007-08-26', 9508);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (10358296, '2004-04-17', 8326);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (10704464, '2019-02-11', 8458);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (11079254, '1996-08-28', 7533);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (11327244, '1982-09-19', 4851);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (11490614, '1980-09-06', 2268);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (11631496, '2012-09-26', 16000);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (11781303, '2000-10-08', 6443);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (11852316, '1973-11-29', 7824);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (12082923, '1983-08-17', 5668);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (12159210, '1981-07-31', 3760);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (12382777, '1993-05-29', 3111);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (12697848, '1997-01-05', 2528);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (12840287, '2012-06-09', 3353);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (13717360, '2002-03-08', 8312);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (13931539, '2013-04-17', 6969);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (13961078, '1994-03-05', 5649);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (14098159, '1972-08-27', 5879);
+INSERT INTO "Account" ("Ano", "Starting_date", "Balance") VALUES (14141812, '2007-02-12', 6141);
+
+
+/*
+ TABLE STRUCTURE FOR: Branch
+*/
+
+DROP TABLE IF EXISTS "Branch";
+
+CREATE TABLE "Branch" (
+  "Bname" varchar(255) NOT NULL PRIMARY KEY,
+  "city" varchar(255) NOT NULL
+);
+
+
+INSERT INTO "Branch" ("Bname", "city") VALUES (' MONTESWAR', 'Kochhaven');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' NADANGHAT ADB', 'Alexanderberg');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' PANAGARH', 'Port Greenhaven');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' PATULI STATION BAZAR', 'Douglasfurt');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' RADHANAGAR ROAD BURNPUR', 'Morissetteport');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' SANCTORIA', 'West Maria');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' SEN RALEIGH ROAD', 'Mayerchester');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' SHYAMSUNDAR', 'Murazikbury');
+INSERT INTO "Branch" ("Bname", "city") VALUES (' SIGNA SAB', 'Lake Jamelbury');
+INSERT INTO "Branch" ("Bname", "city") VALUES ('MOHISHLLA', 'Port Gage');
+
+
+/*
+ TABLE STRUCTURE FOR: Customer
+*/
+
+DROP TABLE IF EXISTS "Customer";
+
+CREATE TABLE "Customer" (
+  "Cusid" int(10) NOT NULL PRIMARY KEY,
+  "Name" varchar(100) NOT NULL,
+  "Address" text NOT NULL
+);
+
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (1, 'Prof. Price Kuphal', '176 Howell Squares');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (2, 'Joel Quigley', '882 Santos Canyon Suite 133');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (3, 'Kitty Blick II', '1926 Torey Square Suite 242');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (4, 'Annalise Watsica', '60590 Guy Unions');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (5, 'Rebecca Hayes', '22874 Kulas Flats');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (6, 'Jordyn Kuvalis', '60330 Goldner Spring');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (7, 'Olga Bogisich', '409 Kathlyn Burgs');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (8, 'Heath Dach', '962 Grimes Meadows');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (9, 'Brandy Rutherford I', '57937 Gleichner Ford Apt. 732');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (10, 'Camila Ortiz', '30788 Lindgren Rapids Apt. 125');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (11, 'Wyman Schamberger', '5862 Schultz Fords');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (12, 'Ms. Abbie Ward', '2993 Fisher Row');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (13, 'Maynard Huel', '491 Felipa Mission Suite 915');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (14, 'Orval Terry', '8733 Funk Camp Apt. 450');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (15, 'Dr. Noel Wolff Jr.', '2031 Karianne Ways Apt. 597');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (16, 'Golden Ankunding', '0923 Maya Center');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (17, 'Earline Medhurst DDS', '6348 Kaitlyn Summit Apt. 680');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (18, 'Miss Tiana Steuber', '62764 Crooks Burg Suite 661');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (19, 'Hiram Stracke', '462 Bruen Mission');
+INSERT INTO "Customer" ("Cusid", "Name", "Address") VALUES (20, 'Agustina Bogan', '006 Nikko Common');
+
+
+/*
+ TABLE STRUCTURE FOR: Deposit
+*/
+
+DROP TABLE IF EXISTS "Deposit";
+
+CREATE TABLE "Deposit" (
+  "Ano" int(11),
+  "Cusid" int(11),
+  "Bname" varchar(100),
+  FOREIGN KEY (Ano) REFERENCES Account(Ano),
+  FOREIGN KEY (Cusid) REFERENCES Customer(Cusid),
+  FOREIGN KEY (Bname) REFERENCES Branch(Bname)
+);
+
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10105970, 1, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10306853, 2, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10358296, 3, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10704464, 4, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11079254, 5, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11327244, 6, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11490614, 7, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11631496, 8, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11781303, 9, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11852316, 10, 'MOHISHLLA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12082923, 11, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12159210, 12, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12382777, 13, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12697848, 14, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12840287, 15, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13717360, 16, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13931539, 17, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13961078, 18, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14098159, 19, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14141812, 20, 'MOHISHLLA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10105970, 1, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10306853, 2, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10358296, 3, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10704464, 4, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11079254, 5, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11327244, 6, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11490614, 7, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11631496, 8, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11781303, 9, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11852316, 10, 'MOHISHLLA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12082923, 11, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12159210, 12, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12382777, 13, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12697848, 14, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12840287, 15, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13717360, 16, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13931539, 17, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13961078, 18, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14098159, 19, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14141812, 20, 'MOHISHLLA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10105970, 1, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10306853, 2, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10358296, 3, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10704464, 4, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11079254, 5, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11327244, 6, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11490614, 7, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11631496, 8, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11781303, 9, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11852316, 10, 'MOHISHLLA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12082923, 11, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12159210, 12, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12382777, 13, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12697848, 14, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12840287, 15, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13717360, 16, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13931539, 17, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13961078, 18, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14098159, 19, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14141812, 20, 'MOHISHLLA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10105970, 1, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10306853, 2, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10358296, 3, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (10704464, 4, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11079254, 5, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11327244, 6, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11490614, 7, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11631496, 8, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11781303, 9, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (11852316, 10, 'MOHISHLLA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12082923, 11, ' MONTESWAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12159210, 12, ' NADANGHAT ADB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12382777, 13, ' PANAGARH');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12697848, 14, ' PATULI STATION BAZAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (12840287, 15, ' RADHANAGAR ROAD BURNPUR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13717360, 16, ' SANCTORIA');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13931539, 17, ' SEN RALEIGH ROAD');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (13961078, 18, ' SHYAMSUNDAR');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14098159, 19, ' SIGNA SAB');
+INSERT INTO "Deposit" ("Ano", "Cusid", "Bname") VALUES (14141812, 20, 'MOHISHLLA');
+
+
+DROP TABLE IF EXISTS "Transcation";
+
+CREATE TABLE "Transaction" (
+  "Ano" int(11) NOT NULL,
+  "Amount" int(5) NOT NULL,
+  "Mode" text NOT NULL,
+  "Date_of_tran" date NOT NULL,
+  FOREIGN KEY (Ano) REFERENCES Deposit(Ano)
+);
+
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10105970, 2411, 'atm', '2010-12-18');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10306853, 4208, 'atm', '1984-05-31');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10358296, 1903, 'online', '2003-10-09');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10704464, 3747, 'online', '2004-10-21');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11079254, 4410, 'atm', '2008-02-02');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11327244, 4573, 'online', '1972-04-30');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11490614, 2870, 'atm', '1980-05-15');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11631496, 3366, 'online', '1975-04-13');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11781303, 1848, 'atm', '1978-12-13');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11852316, 4579, 'online', '2014-02-27');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12082923, 3806, 'atm', '2015-04-03');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12159210, 3697, 'atm', '1976-06-17');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12382777, 2475, 'atm', '1973-06-28');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12697848, 4420, 'online', '1980-01-22');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12840287, 3957, 'online', '1994-08-30');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13717360, 3384, 'atm', '1991-05-25');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13931539, 3583, 'atm', '1993-10-28');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13961078, 3263, 'online', '1984-03-28');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14098159, 1756, 'online', '2008-11-04');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14141812, 2774, 'online', '1995-12-21');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10105970, 1046, 'online', '2011-01-16');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10306853, 4149, 'atm', '1989-03-27');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10358296, 1453, 'online', '1992-09-05');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10704464, 2380, 'online', '2009-11-20');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11079254, 2783, 'atm', '2012-01-03');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11327244, 2125, 'atm', '2005-04-17');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11490614, 3886, 'atm', '2019-07-09');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11631496, 1463, 'atm', '1975-05-03');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11781303, 3051, 'online', '2007-08-02');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11852316, 3395, 'atm', '2015-04-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12082923, 2685, 'atm', '2006-08-08');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12159210, 1261, 'atm', '1979-04-12');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12382777, 3886, 'online', '1973-04-28');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12697848, 4990, 'atm', '2017-09-11');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12840287, 4884, 'atm', '1977-09-24');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13717360, 4068, 'online', '2008-11-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13931539, 4467, 'atm', '1995-12-28');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13961078, 4924, 'online', '1985-04-28');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14098159, 2406, 'online', '1994-08-11');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14141812, 2126, 'online', '2017-07-19');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10105970, 3195, 'online', '1971-11-22');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10306853, 3780, 'online', '2017-04-26');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10358296, 2671, 'atm', '1984-07-29');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10704464, 1658, 'online', '1991-10-02');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11079254, 4482, 'online', '1996-06-20');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11327244, 2160, 'atm', '2000-09-11');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11490614, 3438, 'online', '2010-08-16');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11631496, 3853, 'online', '1997-03-16');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11781303, 1858, 'atm', '1970-05-03');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11852316, 4538, 'atm', '1999-07-16');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12082923, 3833, 'atm', '1994-01-24');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12159210, 1116, 'atm', '1996-04-20');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12382777, 4988, 'atm', '1997-09-16');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12697848, 2934, 'atm', '2007-02-11');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12840287, 4612, 'atm', '2008-05-06');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13717360, 3355, 'online', '2014-07-25');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13931539, 4565, 'atm', '2020-10-17');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13961078, 3045, 'atm', '2014-05-29');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14098159, 1128, 'atm', '1979-07-27');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14141812, 1959, 'online', '2015-04-08');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10105970, 4713, 'atm', '2008-10-15');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10306853, 2860, 'online', '1982-05-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10358296, 2697, 'atm', '2020-02-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10704464, 3251, 'atm', '1996-04-13');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11079254, 3266, 'atm', '2011-11-24');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11327244, 2014, 'atm', '1998-03-23');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11490614, 3312, 'atm', '2020-06-29');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11631496, 1694, 'atm', '2011-06-21');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11781303, 4431, 'online', '1997-12-22');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11852316, 1755, 'atm', '2013-10-28');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12082923, 4657, 'online', '1990-09-12');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12159210, 4323, 'atm', '1996-06-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12382777, 3785, 'atm', '2020-02-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12697848, 1900, 'online', '1970-06-20');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12840287, 4974, 'atm', '2006-03-06');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13717360, 1508, 'atm', '2003-10-20');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13931539, 1474, 'online', '2005-12-09');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13961078, 3700, 'online', '1977-08-15');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14098159, 1422, 'online', '2013-01-04');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14141812, 3625, 'online', '1995-09-26');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10105970, 3771, 'atm', '2012-12-21');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10306853, 3930, 'online', '2006-01-22');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10358296, 1298, 'atm', '2013-11-21');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (10704464, 5000, 'online', '1988-10-18');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11079254, 4064, 'atm', '1982-12-15');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11327244, 4844, 'online', '1976-02-24');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11490614, 1174, 'online', '2020-02-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11631496, 4477, 'online', '1970-02-21');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11781303, 1493, 'online', '2004-11-24');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (11852316, 4802, 'online', '2004-01-12');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12082923, 3026, 'online', '1994-12-18');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12159210, 4522, 'atm', '1995-12-23');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12382777, 4975, 'online', '2020-02-14');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12697848, 1266, 'online', '1985-12-12');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (12840287, 3251, 'online', '1970-08-04');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13717360, 4187, 'online', '1991-02-16');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13931539, 4902, 'atm', '1991-03-03');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (13961078, 1576, 'atm', '1989-10-02');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14098159, 1151, 'online', '2020-07-05');
+INSERT INTO "Transaction" ("Ano", "Amount", "Mode", "Date_of_tran") VALUES (14141812, 3037, 'atm', '2020-08-24');
+
+/*
+  1st query
+*/
+
+WITH "temp" as (
+  select * from Deposit
+  join Account on Account.Ano=Deposit.Ano
+)
+select Branch.Bname,Branch.city,avg(temp.Balance) from Branch
+join "temp" on temp.Bname=Branch.Bname
+group by 1
+having avg(temp.Balance) > 10000;
+
+/*
+  2nd query
+*/
+
+WITH "temp" as (
+  select * from Deposit
+  join Account on Account.Ano=Deposit.Ano
+)
+select Branch.Bname,count(Ano) as "no_of_depositors" from Branch
+join "temp" on temp.Bname=Branch.Bname
+group by 1;
+
+/*
+  3rd query
+*/
+
+WITH "temp" as (
+  select * from Deposit
+  join "Transaction" on "Transaction".Ano=Deposit.Ano
+)
+select Customer.Cusid, Customer.Name,Customer.Address,"temp".Date_of_tran from Customer
+join "temp" on temp.Cusid=Customer.Cusid
+where "temp".Date_of_tran='2020-02-14'
+group by 2;
+

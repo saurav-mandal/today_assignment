@@ -1,0 +1,270 @@
+/*
+ TABLE STRUCTURE FOR: Menu
+*/
+
+DROP TABLE IF EXISTS "Menu";
+
+CREATE TABLE "Menu" (
+  "Hno" int(9) NOT NULL,
+  "Day" varchar(255) NOT NULL,
+  "Breakfast" varchar(255) NOT NULL,
+  "Lunch" varchar(255) NOT NULL,
+  "Dinner" varchar(255) NOT NULL,
+  FOREIGN KEY (Hno) REFERENCES hostel(Hno)
+);
+
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (2, 'Wednesday', ' Breakfast cereal', 'Black Channa and Coconut Stew.Urlai Roast', ' Cuban beef sandwiches');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Sunday', ' Breakfast sandwich', 'Paneer Achaari', ' Grilled cheese sandwiches');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (8, 'Wednesday', ' Yogurt', 'Paneer Achaari', ' Tortellini');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (8, 'Wednesday', ' Muffin', 'Chana Kulcha', ' Salmon patties');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (6, 'Tuesday', ' Milk', 'Shahi Egg Curry', ' Lasagna or vegetable lasagna');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Sunday', 'Marmalade', 'Masala Bhindi', ' Crab cakes');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (2, 'Sunday', ' Coffee', 'Kolhapuri Vegetables', ' Buffalo Blue mac and cheese');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Sunday', ' Bread', 'Paneer Achaari', ' Baked salmon');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (3, 'Wednesday', ' Waffle', 'Kolhapuri Vegetables', ' Spinach and bacon mac and cheese');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (3, 'Thursday', ' Croissant', 'Kolhapuri Vegetables', ' Chicken or beef stroganoff');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (8, 'Thursday', ' Croissant', 'Masala Bhindi', ' Meatball sub burger');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (7, 'Thursday', ' Waffle', 'Masala Bhindi', ' Salmon patties');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (4, 'Thursday', ' Milk', 'Chana Kulcha', 'Baked ziti');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (8, 'Friday', ' Pancake', 'Chana Kulcha', ' Grilled cheese sandwiches');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (5, 'Sunday', ' Egg', 'Masala Bhindi', ' Baked Ravioli');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (3, 'Sunday', ' Tomato', 'Low Fat Dahi Chicken', ' Fettuccine alfredo with chicken or shrimp');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (6, 'Saturday', ' Toast', 'Chana Kulcha', ' Grilled chicken salad');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (6, 'Saturday', ' Donut', 'Low Fat Dahi Chicken', ' Fettuccine alfredo with chicken or shrimp');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (2, 'Sunday', ' Croissant', 'Gujarati Kadhi', ' Slow Cooker Spaghetti and Meatballs');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (4, 'Wednesday', ' Pancake', 'Masala Bhindi', ' Tortellini');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (5, 'Thursday', ' Breakfast cereal', 'Masala Bhindi', ' Italian wraps');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (3, 'Saturday', ' Muffin', 'Dal Makhani', ' Beefy mac and cheese');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Sunday', ' Breakfast burrito', 'Kolhapuri Vegetables', ' Buffalo or BBQ chicken salad');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (7, 'Thursday', ' Yogurt', 'Allahabad Ki Tehri', ' Baked Ravioli');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Saturday', ' Porridge', 'Black Channa and Coconut Stew.Urlai Roast', ' Italian wraps');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (1, 'Thursday', ' Porridge', 'Black Channa and Coconut Stew.Urlai Roast', ' Grilled cheese sandwiches');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (1, 'Thursday', ' Milk', 'Shahi Egg Curry', ' Pad Tai');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Sunday', ' Tomato', 'Chana Kulcha', ' Spinach and bacon mac and cheese');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Friday', ' Coffee', 'Kolhapuri Vegetables', ' Lasagna or vegetable lasagna');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (4, 'Wednesday', ' Orange juice', 'Kolhapuri Vegetables', ' Fettuccine alfredo with chicken or shrimp');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (6, 'Friday', ' Waffle', 'Kolhapuri Vegetables', ' Spinach and bacon mac and cheese');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (1, 'Wednesday', ' Milk', 'Dal Makhani', ' Baked salmon');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (2, 'Monday', ' Hot chocolate', 'Kolhapuri Vegetables', ' Fettuccine alfredo with chicken or shrimp');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (3, 'Tuesday', ' Orange juice', 'Shahi Egg Curry', ' Cuban beef sandwiches');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (8, 'Saturday', ' Coffee', 'Kolhapuri Vegetables', ' Lasagna or vegetable lasagna');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (8, 'Tuesday', ' Sausage', 'Chana Kulcha', 'Baked ziti');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (1, 'Monday', ' Yogurt', 'Shahi Egg Curry', ' Salmon patties');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (10, 'Sunday', ' Donut', 'Shahi Egg Curry', ' Fettuccine alfredo with chicken or shrimp');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (7, 'Thursday', ' Bacon', 'Black Channa and Coconut Stew.Urlai Roast', ' Grilled chicken salad');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (3, 'Saturday', ' Bread', 'Paneer Achaari', ' Chicken sandwiches');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (2, 'Friday', ' Croissant', 'Low Fat Dahi Chicken', ' Salmon patties');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (4, 'Friday', ' Hot chocolate', 'Chana Kulcha', ' Paninis');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (9, 'Wednesday', ' Toast', 'Dal Makhani', ' Grilled cheese sandwiches');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (5, 'Thursday', ' Coffee', 'Chana Kulcha', ' Crab cakes');
+INSERT INTO "Menu" ("Hno", "Day", "Breakfast", "Lunch", "Dinner") VALUES (1, 'Sunday', ' Toast', 'Kolhapuri Vegetables', ' Baked Ravioli');
+
+
+/*
+ TABLE STRUCTURE FOR: Student
+*/
+
+DROP TABLE IF EXISTS "Student";
+
+CREATE TABLE "Student" (
+  "Sid" int(9) NOT NULL,
+  "Sname" varchar(100) NOT NULL,
+  "Gender" varchar(255) NOT NULL,
+  "Year" int(9) NOT NULL,
+  "Hno" int(9) NOT NULL,
+  FOREIGN KEY (Hno) REFERENCES hostel(Hno)
+) ;
+
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (1, 'Russell Hackett', 'F', 2, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (2, 'Willie Schowalter', 'F', 3, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (3, 'Tessie Dickinson', 'F', 3, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (4, 'Prof. Scot Roberts Jr.', 'F', 3, 10);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (5, 'Prof. Pascale Terry IV', 'M', 1, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (6, 'Camilla Schroeder', 'M', 4, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (7, 'Hilton Mante', 'F', 3, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (8, 'Milford Wilkinson', 'M', 2, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (9, 'Ms. Ursula Effertz I', 'M', 1, 10);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (10, 'Prof. Stephania Deckow', 'M', 4, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (11, 'Kennith Hoeger', 'F', 2, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (12, 'Mrs. Thalia Schaefer', 'M', 3, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (13, 'Hubert Christiansen', 'F', 1, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (14, 'Dr. Holly Lynch', 'M', 2, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (15, 'Crystal Bogan', 'F', 3, 5);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (16, 'Josue Zboncak', 'F', 1, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (17, 'Evangeline Collins', 'M', 3, 3);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (18, 'Marta Hettinger MD', 'M', 4, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (19, 'Prof. Concepcion Abbott', 'M', 4, 10);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (20, 'Frances McGlynn MD', 'M', 4, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (21, 'Mervin Roob', 'F', 2, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (22, 'Moriah Conroy', 'M', 2, 8);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (23, 'Jerrold Turcotte', 'F', 3, 5);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (24, 'Lynn Auer', 'M', 1, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (25, 'Prof. Akeem Balistreri', 'F', 1, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (26, 'Taylor Bahringer', 'M', 1, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (27, 'Korbin Ullrich', 'M', 4, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (28, 'Yolanda Jacobson', 'F', 3, 10);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (29, 'Prof. Cecilia Kertzmann', 'M', 1, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (30, 'Devan Rempel', 'F', 3, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (31, 'Izaiah Gutkowski', 'F', 4, 10);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (32, 'Kristoffer Strosin', 'M', 3, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (33, 'Melissa Nienow', 'F', 1, 8);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (34, 'Miss Krystel Rau IV', 'M', 2, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (35, 'Quinton Daniel', 'F', 1, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (36, 'Prof. Albina Wolf', 'F', 2, 10);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (37, 'Kathryn Rath', 'M', 2, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (38, 'Ms. Josefina Yost MD', 'M', 1, 8);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (39, 'Forrest Wiegand', 'M', 2, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (40, 'Dr. Raphaelle Jacobi IV', 'M', 2, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (41, 'Wanda Krajcik', 'F', 2, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (42, 'Dr. Helga Wiegand', 'F', 2, 5);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (43, 'Prof. Etha Huels', 'M', 2, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (44, 'Bridget Kuphal', 'F', 4, 8);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (45, 'Aletha Corwin', 'M', 1, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (46, 'Zander Wehner', 'F', 1, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (47, 'Yoshiko Yundt', 'F', 1, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (48, 'Samantha Roberts', 'F', 4, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (49, 'Sigrid Wilkinson III', 'M', 1, 8);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (50, 'Emiliano Heaney DDS', 'M', 3, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (51, 'Prof. Felipe Schuppe', 'F', 3, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (52, 'Elza Fahey', 'F', 3, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (53, 'Florida Schuppe', 'F', 2, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (54, 'Melody Tremblay', 'F', 4, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (55, 'Mr. Carmine Reinger', 'F', 2, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (56, 'Dr. Raleigh Rohan', 'F', 3, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (57, 'Ms. Megane Yundt', 'M', 3, 10);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (58, 'Mr. Baron Kertzmann IV', 'F', 2, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (59, 'Miss Shemar Schaden', 'F', 4, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (60, 'Esther Brown', 'M', 4, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (61, 'Buck Wiegand', 'F', 4, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (62, 'Zachariah Koelpin', 'M', 1, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (63, 'Ms. Palma Hermann', 'F', 3, 3);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (64, 'Ivah Goodwin', 'M', 3, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (65, 'Jonathan Flatley Sr.', 'F', 3, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (66, 'Rhett Cartwright II', 'F', 4, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (67, 'Joaquin Senger', 'M', 2, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (68, 'Ted Feeney', 'M', 1, 5);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (69, 'Jamarcus Grimes', 'F', 1, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (70, 'Bruce Crona', 'F', 2, 7);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (71, 'Dr. Emile Frami DDS', 'M', 2, 3);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (72, 'Dr. Willow Kuhlman Sr.', 'F', 2, 8);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (73, 'Emilia Wilkinson', 'F', 4, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (74, 'Barrett Larson', 'M', 2, 5);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (75, 'Addison Williamson Jr.', 'M', 1, 5);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (76, 'Rebeca Zulauf', 'F', 3, 3);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (77, 'Mr. Tony Morissette', 'M', 2, 1);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (78, 'Beau Feil', 'F', 1, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (79, 'Anjali Daugherty', 'M', 3, 6);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (80, 'Juanita Morissette', 'M', 3, 9);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (81, 'Ms. Adaline Hilll', 'M', 2, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (82, 'Cecil Turner', 'M', 2, 4);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (83, 'Joelle Quigley', 'F', 4, 3);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (84, 'Sanford Spinka', 'F', 3, 2);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (85, 'Carlos Weissnat', 'F', 1, 8);
+INSERT INTO "Student" ("Sid", "Sname", "Gender", "Year", "Hno") VALUES (86, 'Prof. Regan Russel', 'F', 3, 4);
+
+
+/*
+ TABLE STRUCTURE FOR: Warden
+*/
+
+DROP TABLE IF EXISTS "Warden";
+
+CREATE TABLE "Warden" (
+  "Wname" varchar(100) NOT NULL,
+  "Qualification" varchar(255) NOT NULL,
+  "Hno" int(9) NOT NULL,
+  FOREIGN KEY (Hno) REFERENCES hostel(Hno)
+);
+
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Carson Bernier', 'UG', 9);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Antonina Greenholt', 'PHD', 5);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Lesley Predovic', 'PG', 10);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Sherwood Smitham', 'PG', 2);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Jorge Kessler', 'UG', 2);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Dr. Ewald Senger DDS', 'PG', 1);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Chaim Dach', 'UG', 4);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Valerie Schinner', 'PHD', 3);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Oleta Gutmann Sr.', 'PG', 5);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Flossie Hegmann', 'PG', 4);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Deon Kuphal', 'PHD', 6);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Mr. Mariano Nolan V', 'PG', 2);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Jonas Prosacco', 'UG', 4);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Samir Bosco', 'PG', 4);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Dr. Era Mraz', 'PG', 9);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Bart Parisian', 'PHD', 1);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Cayla Hahn', 'PHD', 10);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Magdalena Little', 'PG', 7);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Verdie Mante Jr.', 'PHD', 5);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Eugene Wilkinson', 'PG', 7);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Prof. Darrick Boyer', 'PHD', 3);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Lafayette Paucek', 'PG', 1);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Maxie Gleichner', 'UG', 6);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Jerald Crist', 'UG', 2);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Dr. Ashton Gutmann Sr.', 'PHD', 4);
+INSERT INTO "Warden" ("Wname", "Qualification", "Hno") VALUES ('Mr. Dameon Grimes', 'PHD', 10);
+
+
+/*
+ TABLE STRUCTURE FOR: hostel
+*/
+
+DROP TABLE IF EXISTS "hostel";
+
+CREATE TABLE "hostel" (
+  "Hno" int(9) NOT NULL PRIMARY KEY,
+  "Hname" varchar(100) NOT NULL,
+  "Type" varchar(255) NOT NULL
+);
+
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (1, 'hostel_F', 'girls');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (2, 'hostel_D', 'boys');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (3, 'hostel_J', 'boys');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (4, 'hostel_5', 'girls');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (5, 'hostel_B', 'girls');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (6, 'hostel_A', 'girls');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (7, 'hostel_E', 'boys');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (8, 'hostel_H', 'boys');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (9, 'hostel_C', 'girls');
+INSERT INTO "hostel" ("Hno", "Hname", "Type") VALUES (10, 'hostel_G', 'girls');
+
+/*
+  1st query
+*/
+
+select Type , count(*) as "number of boys and girls hostels" from  hostel
+group by 1;
+
+/*
+  2nd query
+*/
+
+
+select * from Menu 
+join hostel on Menu.Hno=hostel.Hno
+where Menu.Day='Tuesday';
+/*
+  3rd query
+*/
+
+select hostel.Hname,count(*) as "no of warden" from Warden
+join hostel on hostel.Hno=Warden.Hno
+group by hostel.Hname;
+/*
+  4th query
+*/
+
+select hostel.Hname,count(*) as "no of student" from Student
+join hostel on hostel.Hno=Student.Hno
+group by hostel.Hname;
+
+/*
+  5th query
+*/
+
+UPDATE Menu
+SET Breakfast = "noodles"
+WHERE Day="Thursday" and "Hname" IN (
+SELECT Hname
+FROM hostel
+WHERE (hostel.Hno = Menu.Hno and hostel.Hname="hostel_5")
+);
